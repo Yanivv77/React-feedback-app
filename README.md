@@ -55,14 +55,6 @@ Code changes can be seen in [FeedbackForm.jsx](src/components/FeedbackForm.jsx#L
 
 #### Q: How do you reset state after submitting a feedback?
 
-Reset sate back to default after adding a new feedback.
-
-> Code changes can be seen in [FeedbackForm.jsx](src/components/FeedbackForm.jsx#L57)
-
-#### No need for local state, useEffect or context in RatingSelect
-
-No need for local state, useEffect or consuming context in this component as it's
-just a duplicate of parent state. Relies on `selected` being passed as prop in [FeedbackForm.jsx](src/components/FeedbackForm.jsx#L64)
 
 
 
