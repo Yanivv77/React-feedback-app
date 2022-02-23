@@ -64,25 +64,7 @@ Reset sate back to default after adding a new feedback.
 No need for local state, useEffect or consuming context in this component as it's
 just a duplicate of parent state. Relies on `selected` being passed as prop in [FeedbackForm.jsx](src/components/FeedbackForm.jsx#L64)
 
-Additionally here we can simplify our JSX with iteration.
 
-> Code changes can be seen in [RatingSelect.jsx](src/components/RatingSelect.jsx#L2) and [FeedbackForm.jsx](src/components/FeedbackForm.jsx#L64)
-
-#### Simplify average rating calculation
-
-Simplify average rating calculation without needing regex.
-
-> Code changes can be seen in [FeedbackStats.jsx](src/components/FeedbackStats.jsx#L7)
-
-#### BUG: About link icon shows in the wrong place with many feedback items
-
-The about link icon container was positioned
-absolute to the container meaning when lots of feedback's were added the icon
-would appear off to the right and not at the bottom of the page.
-
-> Code changes can be see in [index.css](src/index.css#L188)
-
----
 
 # Usage
 
@@ -98,4 +80,3 @@ npm install
 npm run dev
 ```
 
-This will run JSON-server on port :5000 and React on port :3000
